@@ -1,0 +1,50 @@
+<header>
+  <h1>Timezone comparison &ndash; local time worldwide</h1>
+  <noscript><h1>Please enable Javascript</h1></noscript>
+</header>
+
+
+<div id="container">
+
+  <form class="tz-list" data-bind="submit: function() { add_clock(); }">
+    <div class="tz-countries">
+      <select data-bind="value: country, options: countries, optionsCaption: 'All countries'"></select>
+    </div>
+    <div class="tz-timezones">
+      <select data-bind="options: timezones_filtered, optionsCaption: 'Select a timezone', value: timezone, event: {dblclick: function() { add_clock() }}"></select>
+    </div>
+    <div class="tz-add">
+      <button type="submit" data-bind="click: function() { add_clock(); }"><span class="icomoon">↓</span> <span>Add to clocks</span></button>
+    </div>
+  </form>
+
+  <div class="clocks">
+    <table>
+      <tbody data-bind="foreach: clocks">
+        <tr>
+          <td class="clocks-offset" data-bind="text: computed().offset_gmt">
+          <td class="clocks-tz">
+            <span data-bind="text: timezone"></span>
+            <br>
+            <span class="clocks-tz-country" data-bind="text: country"></span>
+          <td class="clocks-time">
+            <span data-bind="text: computed().date"></span>
+            <br>
+            <span class="clocks-day" data-bind="text: computed().day"></span>
+          <td class="clocks-remove icomoon">
+            <a title="remove clock" data-bind="click: $parent.remove_clock, visible: timezone != 'Local time'">x</a>
+      <tfoot>
+        <tr>
+          <td>
+          <td colspan=2 class="clocks-slider">
+            <input type="range" min=0 max=1439 title="slide to adjust time" data-bind="value: minutes">
+          <td>
+    </table>
+  </div>
+  
+  <div class="links icomoon">
+    <a title="Bookmark clocks" data-bind="attr: {href: bookmark}">l</a>
+    <a title="Contribute at GitHub" href="https://github.com">g</a>
+  </div>
+
+</div>

@@ -1,0 +1,55 @@
+html {
+  min-height: 100%;
+}
+body {
+  width: 33em;
+  margin: 1em auto 2em auto;
+  background: #778D3A;
+  color: #eee;
+  font-family: 'Droid Sans', sans-serif;
+  font-size: 18px;
+}
+
+table {
+  border-collapse: collapse;
+}
+th { background: #ECEFF2; font-weight: normal; }
+th, td {
+  padding: 0.4em 1em;
+  border: 3px #ECEFF2 solid;
+}
+td { vertical-align: top; }
+
+a { text-decoration: underline; color: blue; cursor: pointer; }
+a:hover { text-decoration: none; }
+
+input, button, select {
+  font-size: 0.9em;
+  border: 0.1em solid #aaa;
+  border-radius: 4px;
+  padding: 4px 10px;
+  color: #000;
+}
+input[type="submit"], input[type="button"], button {
+  background: #eee;
+  box-shadow: 2px 2px 3px 1px #333;
+  cursor: pointer;
+}
+input[type="submit"]:hover, input[type="button"]:hover, button:hover,
+input[type="submit"]:active, input[type="button"]:active, button:active {
+  background: #ffe0e0;
+}
+input[type="submit"]:active, input[type="button"]:active, button:active {
+  box-shadow: 0px 0px 5px 1px #555;
+}
+select {
+  background: #eee;
+  padding-left: 0.4em;
+}
+textarea {
+  border: 1px solid #ccc;
+  padding: 0.5em;
+  font-size: 1em;
+  font-family: sans-serif;
+  background: #fbfbfb;
+}

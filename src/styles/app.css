@@ -1,0 +1,103 @@
+h1 {
+  text-align: center;
+  font-size: 1.4em;
+}
+
+.tz-list {
+  padding: 1em;
+  margin-bottom: 2em;
+}
+.tz-countries>select, .tz-timezones>select {
+  width: 100%;
+  color: #eee;
+  border-radius: 0;
+  border: 0.2em solid #444;
+  font-size: 1em;
+}
+.tz-countries>select:focus, .tz-timezones>select:focus {
+}
+.tz-countries>select {
+  background: #666;
+  background: linear-gradient(to bottom, #7D7D7D, #696969);
+  margin-bottom: 0.6em;
+}
+.tz-countries>select option {
+  background: #666;
+}
+.tz-timezones>select {
+  background: #3E4957;
+  background: linear-gradient(to bottom, #516072, #404B5A);
+}
+.tz-timezones>select option {
+  background: #3E4957;
+}
+.tz-add {
+  margin-top: 1em;
+  text-align: center;
+}
+.tz-add .icomoon {
+  padding-right: 0.4em;
+}
+
+.clocks {
+  width: 33em;
+  padding: 1em;
+  background: #3E4957;
+  color: #fff;
+  border-radius: 1em;
+}
+.clocks table td {
+  border: none;
+}
+.clocks-offset {
+  text-align: right;
+  color: #999;
+}
+.clocks-tz {
+  width: 100%;
+}
+.clocks-time {
+  min-width: 4.5em;
+}
+.clocks-tz-country, .clocks-day {
+  font-size: 0.8em;
+  color: #999;
+}
+.clocks-remove {
+  padding: 0;
+}
+.clocks-remove>a {
+  display: block;
+  width: 1em;
+  padding: 1em;
+  font-family: icomoon;
+  font-size: 18px;
+  color: #999;
+  text-decoration: none;
+  text-align: right;
+}
+.clocks-remove>a:hover {
+  color: red;
+  border-color: red;
+  box-shadow-color: red;
+}
+.links {
+  margin-top: 1em;
+  text-align: right;
+}
+.links a {
+  font-size: 20px;
+  color: #3E4957;
+  text-decoration: none;
+}
+.links a:hover {
+  color: #000;
+}
+.clocks-slider>input {
+  width: 100%;
+}
+
+.icomoon {
+  font-family: 'icomoon';
+  speak: none;
+}
